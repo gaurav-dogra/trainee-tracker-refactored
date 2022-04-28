@@ -1,0 +1,482 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+/*new changes below*/
+
+/*@font-face {
+    font-family: 'BWGlennSans-Bold';
+    src: local(~/lib/BwGlennSans-Bold.otf);
+}
+
+@font-face {
+    font-family: 'BWGlennSlab-Bold';
+    src: local(~/lib/BwGlennSans-Bold.otf);
+}*/
+
+body {
+    background-color: white;
+    margin: 0 auto;
+    font-weight: 400;
+/*    font-family: 'BWGlennSans-Bold';*/
+    font-family: 'Anek Gujarati', sans-serif;
+    font-size: 1.2em;
+}
+
+nav {
+    background-color: #94244B;
+    height: 80px;
+    color: white;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+#nav-header-logo-div {
+    width: 45vw;
+/*    font-family: 'BWGlennSlab-Bold';*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+#sparta-logo {
+    height: 60px;
+    margin: 10px 7%;
+}
+
+#nav-header {
+    margin: 1% 20% 0 0;
+    font-size: 1.6em;
+    font-weight: 700;
+}
+
+#nav-links-div {
+    width: 40vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+#nav-links-div a {
+    color: white;
+    text-decoration: none;
+    margin: 1%;
+}
+
+main {
+    margin: 0 auto;
+    text-align: center;
+    min-height: calc(100vh - 140px);
+}
+
+h1, h2, h3 {
+    margin: 2%;
+}
+
+.feedback-form {
+    width: 90vw;
+    margin: 2% 2% 2% 0;
+    box-shadow: 3px 3px 5px #555555;
+}
+
+.feedback-form thead {
+    background-color: black;
+    border: 3px solid black;
+    color: white;
+}
+
+.feedback-form th {
+    padding: 15px;black;
+    /*width: 16.66%;*/
+}
+
+.feedback-form td {
+    padding: 15px;
+    border: 3px solid black;
+    /*width: 16.66%;*/
+}
+
+.view-week-num {
+    width: 3%;
+}
+
+.view-scs {
+    width: 20%;
+}
+
+.view-tech-skills {
+    width: 8%;
+}
+
+.view-consultant-skills {
+    width: 8%;
+}
+
+.view-action {
+    width: 8%;
+}
+.view-first-name {
+    width: 10%;
+}
+.view-last-name {
+    width: 15%;
+}
+.view-email {
+    width: 20%;
+}
+.view-course {
+    width: 10%;
+}
+.view-courseId {
+    width: 3%;
+}
+
+    .edit-feedback-form {
+        width: 90vw;
+        margin: 2% 2% 2% 0;
+        box-shadow: 3px 3px 5px #555555;
+    }
+
+.edit-feedback-form thead {
+    background-color: black;
+    border: 3px solid black;
+    color: white;
+}
+
+.edit-feedback-form th {
+    padding: 15px;
+    black;
+    /*width: 16.66%;*/
+}
+
+.edit-feedback-form td {
+    padding: 15px;
+    border: 3px solid black;
+    /*width: 16.66%;*/
+}
+
+.edit-week-num {
+    width: 3%;
+}
+
+.edit-scs {
+    width: 20%;
+}
+
+.edit-tech-skills {
+    width: 8%;
+}
+
+.edit-consultant-skills {
+    width: 8%;
+}
+textarea {
+    width: 300px;
+    height: 150px;
+}
+.edit-first-name {
+    width: 20%;
+}
+.edit-last-name {
+    width: 20%;
+}
+.edit-email {
+    width: 20%;
+}
+.edit-courseId {
+    width: 10%;
+}
+
+.dropdown-form {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2em;
+    background-color: #94244B;
+    color: white;
+    margin: 2% auto;
+    padding: 1%;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px #94244B;
+}
+
+.dropdown-label {
+    font-size: 1.4em;
+}
+
+.dropdown-form select {
+    padding: 1%;
+    border-radius: 3px;
+}
+
+.login-form {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2em;
+    background-color: #94244B;
+    color: white;
+    margin: 2% auto;
+    padding: 1%;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px #94244B;
+}
+.login-form input {
+    padding: 1%;
+    border-radius: 3px;
+}
+
+.small-dropdown {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2em;
+    margin: 2% auto;
+    padding: 1%;
+    border-radius: 3px;
+}
+
+.small-dropdown select {
+    padding: 1%;
+    border-radius: 3px;
+}
+
+.start-continue-stop {
+    width: 90%;
+    margin: 2% auto;
+    table-layout: fixed;
+    box-shadow: 3px 3px 5px #E33661;
+}
+
+.start-continue-stop thead {
+    background-color: #2D2A2B;
+    color: white;
+    border: 3px solid #94244B;
+}
+
+.start-continue-stop th {
+    padding: 15px;
+    border: 3px solid #94244B;
+    width: 33.33%;
+}
+
+.start-continue-stop td {
+    padding: 15px;
+    border: 3px solid #2D2A2B;
+    width: 33.33%;
+}
+
+.skills-form {
+    width: 70%;
+    margin: 2% auto;
+    table-layout: fixed;
+    box-shadow: 3px 3px 5px #E33661;
+}
+
+.skills-form thead {
+    background-color: #2D2A2B;
+    color: white;
+    border: 3px solid #94244B;
+}
+
+.skills-form th {
+    padding: 15px;
+    border: 3px solid #94244B;
+    width: 33.33%;
+}
+
+.skills-form td {
+    padding: 15px;
+    border: 3px solid #2D2A2B;
+    width: 33.33%;
+}
+
+.all-trainees-form {
+    width: 90%;
+    margin: 2% auto;
+    table-layout: fixed;
+    box-shadow: 3px 3px 7px #E33661;
+}
+
+.all-trainees-form thead {
+    background-color: #2D2A2B;
+    color: white;
+    border: 3px solid #94244B;
+}
+
+.all-trainees-form th {
+    padding: 15px;
+    border: 3px solid #94244B;
+    width: 16.66%;
+}
+
+.all-trainees-form td {
+    padding: 15px;
+    border: 3px solid #2D2A2B;
+    width: 16.66%;
+}
+
+#first-name-trview {
+    width: 15%;
+}
+
+#last-name-trview {
+    width: 15%;
+}
+
+#course-trview {
+    width: 10%;
+}
+
+#email-trview {
+    width: 20%;
+}
+
+#action-trview {
+    width: 15%;
+}
+
+footer {
+    background-color: #94244B;
+    color: white;
+    height: 50px;
+    /* position: sticky; */
+    bottom: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+#footer-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer a {
+    color: white;
+    font-size: 0.8em;
+    text-decoration: none;
+}
+
+footer p {
+    font-size: 0.8em;
+    margin-top: 0.6%;
+}
+
+#copyright {
+    width: 20%;
+}
+
+#nav-links-div a:hover,
+footer a:hover {
+    color: rgb(242, 217, 80);
+}
+
+.custom-button {
+    padding: 10px 10px;
+    margin: 10px;
+    min-width: 150px;
+    max-width: 350px;
+}
+
+.view-tracker-btn {
+    background-color: #E33661;
+    padding: 10px 30px;
+    border-radius: 7px;
+}
+
+
+@media (max-width: 900px) {
+    #nav-header {
+        margin: 1% 0 0 0;
+    }
+
+    footer a {
+        font-size: 0.6em;
+    }
+}
+
+@media (max-width: 650px) {
+    #nav-div {
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: repeat(2, 50%);
+        padding: 2% 0;
+        margin-left: 3%;
+    }
+
+    #nav-header {
+        grid-area: 1/1/2/5;
+        margin-left: -10%;
+    }
+
+    #home {
+        grid-area: 2/1/3/2;
+        align-self: center;
+    }
+
+    #about {
+        grid-area: 2/2/3/3;
+    }
+
+    #register {
+        grid-area: 2/3/3/4;
+    }
+
+    #logout {
+        grid-area: 2/4/3/5;
+    }
+}
+
+@media (min-width: 2000px) {
+    .feedback-form {
+        width: 90vw;
+        left: 100px;
+/*        min-width: 1800px;
+        margin: 2% auto;
+        text-align: center;
+        table-layout: fixed;*/
+    }
+
+    .dropdown-form {
+        width: 70vw;
+    }
+
+    .start-continue-stop {
+        width: 90vw;
+    }
+
+    .skills-form {
+        width: 90vw;
+    }
+
+    .all-trainees-form {
+        width: 90vw;
+    }
+}

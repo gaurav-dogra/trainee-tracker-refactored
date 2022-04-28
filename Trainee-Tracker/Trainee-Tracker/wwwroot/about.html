@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Trainee Tracker</title>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="Trainee_Tracker.styles.css" asp-append-version="true" />
+</head>
+<body>
+        <nav>
+            <div id="nav-div">
+                <h2 id="nav-header">Trainee Tracker</h2>
+                <a id="home" href="/">Home</a>
+                <a id="about" href="/about.html">About</a>
+                <a id="register" href="">Register</a>
+                <a id="logout" href="">Logout</a>
+            </div>
+        </nav>
+    <div class="container">
+        <main role="main" class="pb-3">
+            Sparta Global Training Final Project: The Trainee Tracker
+            Introduction
+            This project revolves around the creation of self evaluation software for trainees to use throughout the course, with their trainers able to view their data. This is currently handled by Sparta via the use of tracker spreadsheets updated at the end of each week. The project has room for additional functionality, such as summary reports and graphs that track weekly scores in order to aid trainers.
+
+            The main focus is on the delivery of a functioning tracker system, seeded with dummy course and trainee data with web forms being added after this setup stage to manage the system.
+
+            The Projects Database system
+            The tracker system has a database which contains tables for Trainers, Trainees, and Trackers.
+        </main>
+    </div>
+
+    <footer>
+        <div id="footer-div">
+            <a id="copyright" href="">Copyright &copy; SpartaGlobal</a>
+            <a id="privacy" href="">Privacy Policy</a>
+            <a id="TermsOfUse" href="">Terms of Use</a>
+            <a id="siteMap" href="">Site Map</a>
+        </div>
+    </footer>
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
